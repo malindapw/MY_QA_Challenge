@@ -1,0 +1,122 @@
+[
+  {
+    "description": "  I should be able to generate a new payslip for employees\n  I should be able to view payslips for exsisting employees",
+    "elements": [
+      {
+        "id": "payroll-system-payslips;generate-payslip-for-a-new-employee",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "Generate payslip for a new employee",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I generate a payslip for a new employee with John, Snow, 81900, 9",
+            "result": {
+              "status": "passed",
+              "duration": 3386893631
+            },
+            "line": 8,
+            "match": {
+              "location": "/Users/malindaw/Downloads/MY-Technology-shiny-people-8ab2c6ff65735d776916bc338b4432a10d683971/payroll/app/test/step_definitions/payslip_steps.js:5"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "I should see the payslip summary page including John Snow, $81900.00, $614.00, $4690.00",
+            "result": {
+              "status": "passed",
+              "duration": 140527049
+            },
+            "line": 9,
+            "match": {
+              "location": "/Users/malindaw/Downloads/MY-Technology-shiny-people-8ab2c6ff65735d776916bc338b4432a10d683971/payroll/app/test/step_definitions/payslip_steps.js:12"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 121784523
+            },
+            "hidden": true,
+            "match": {
+              "location": "/Users/malindaw/Downloads/MY-Technology-shiny-people-8ab2c6ff65735d776916bc338b4432a10d683971/payroll/app/node_modules/selenium-cucumber-js/runtime/world.js:221"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "id": "payroll-system-payslips;can-view-payslip-for-an-existing-employee",
+        "keyword": "Scenario",
+        "line": 22,
+        "name": "Can view payslip for an existing employee",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "I paid for employee Peter Card with 75000, 5",
+            "result": {
+              "status": "passed",
+              "duration": 2178830389
+            },
+            "line": 16,
+            "match": {
+              "location": "/Users/malindaw/Downloads/MY-Technology-shiny-people-8ab2c6ff65735d776916bc338b4432a10d683971/payroll/app/test/step_definitions/payroll_steps.js:5"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I select View for employee 'Peter Card' from payments",
+            "result": {
+              "status": "passed",
+              "duration": 831959004
+            },
+            "line": 17,
+            "match": {
+              "location": "/Users/malindaw/Downloads/MY-Technology-shiny-people-8ab2c6ff65735d776916bc338b4432a10d683971/payroll/app/test/step_definitions/payments_steps.js:5"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "I should see the payslip summary page including Peter Card, $75000.00, $313.00, $4610.00",
+            "result": {
+              "status": "passed",
+              "duration": 130897613
+            },
+            "line": 18,
+            "match": {
+              "location": "/Users/malindaw/Downloads/MY-Technology-shiny-people-8ab2c6ff65735d776916bc338b4432a10d683971/payroll/app/test/step_definitions/payslip_steps.js:12"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 121086485
+            },
+            "hidden": true,
+            "match": {
+              "location": "/Users/malindaw/Downloads/MY-Technology-shiny-people-8ab2c6ff65735d776916bc338b4432a10d683971/payroll/app/node_modules/selenium-cucumber-js/runtime/world.js:221"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "payroll-system-payslips",
+    "keyword": "Feature",
+    "line": 2,
+    "name": "Payroll System Payslips",
+    "tags": [],
+    "uri": "/Users/malindaw/Downloads/MY-Technology-shiny-people-8ab2c6ff65735d776916bc338b4432a10d683971/payroll/app/test/features/payslip.feature"
+  }
+]

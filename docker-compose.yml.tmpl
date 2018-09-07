@@ -1,0 +1,29 @@
+version: "3"
+services:
+  nginx:
+    image: "{{ .nginx }}"
+    ports:
+        - "{{ .port }}:80"
+    links:
+      - "payroll:app"
+  payroll:
+    image: "{{ .payroll }}"
+    environment:
+      - NODE_ENV=production
+    expose:
+        - "3000"
+    links:
+     - tax
+     - payments
+  tax:
+    image: "{{ .tax }}"
+    environment:
+      - NODE_ENV=production
+    expose:
+        - "3001"
+  payments:
+    image: "{{ .payments }}"
+    environment:
+      - NODE_ENV=production
+    expose:
+        - "3002"

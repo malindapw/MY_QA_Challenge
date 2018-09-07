@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+    <testsuite name="payroll-system-payslips;generate-payslip-for-a-new-employee" tests="2" failures="0" skipped="0">
+        <properties>
+            <property name="URI" value="/Users/malindaw/Downloads/MY-Technology-shiny-people-8ab2c6ff65735d776916bc338b4432a10d683971/payroll/app/test/features/payslip.feature">
+            </property>
+        </properties>
+        <testcase name="When I generate a payslip for a new employee with John, Snow, 81900, 9" classname="payroll-system-payslips;generate-payslip-for-a-new-employee" time="3.386893631">
+        </testcase>
+        <testcase name="Then I should see the payslip summary page including John Snow, $81900.00, $614.00, $4690.00" classname="payroll-system-payslips;generate-payslip-for-a-new-employee" time="0.140527049">
+        </testcase>
+    </testsuite>
+    <testsuite name="payroll-system-payslips;can-view-payslip-for-an-existing-employee" tests="3" failures="0" skipped="0">
+        <properties>
+            <property name="URI" value="/Users/malindaw/Downloads/MY-Technology-shiny-people-8ab2c6ff65735d776916bc338b4432a10d683971/payroll/app/test/features/payslip.feature">
+            </property>
+        </properties>
+        <testcase name="Given I paid for employee Peter Card with 75000, 5" classname="payroll-system-payslips;can-view-payslip-for-an-existing-employee" time="2.178830389">
+        </testcase>
+        <testcase name="When I select View for employee &apos;Peter Card&apos; from payments" classname="payroll-system-payslips;can-view-payslip-for-an-existing-employee" time="0.831959004">
+        </testcase>
+        <testcase name="Then I should see the payslip summary page including Peter Card, $75000.00, $313.00, $4610.00" classname="payroll-system-payslips;can-view-payslip-for-an-existing-employee" time="0.130897613">
+        </testcase>
+    </testsuite>
+</testsuites>
